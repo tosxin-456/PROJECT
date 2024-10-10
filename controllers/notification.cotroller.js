@@ -1,3 +1,7 @@
+const Notification = require("../models/notification.model");
+
+
+
 exports.create_notification = async (req, res) => {
     const { message } = req.body;
     const admin = req.user._id

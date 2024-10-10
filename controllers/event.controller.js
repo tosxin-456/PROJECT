@@ -1,3 +1,5 @@
+const Event = require("../models/event.modal");
+
 exports.createEvent = async (req, res) => {
     const { eventName, date, description } = req.body;
     const admin = req.user._id
