@@ -1,5 +1,5 @@
 const express = require('express');
-const Event = require('../models/event.model');
+const Event = require('../models/event.modal');
 const { createEvent, getEvents } = require('../controllers/event.controller');
 const { verifyAdmin, verifyToken } = require('../config/jwtToken');
 const router = express.Router();
