@@ -4,7 +4,7 @@ const User = require('./user.model'); // Assuming you have a User model
 const notificationSchema = new mongoose.Schema({
     admin: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     message: { type: String, required: true },
-    date: { type: Date, default: Date.now }, // Fixed 'data' to 'date'
+    date: { type: Date, default: Date.now },
     email: { type: String, required: true }
 });
 
